@@ -1,0 +1,89 @@
+body {
+   background: url("./falafelllllll.avif");
+   background-size: cover;
+   background-repeat: no-repeat;
+
+}
+
+form {
+   color: azure;
+   position: absolute;
+   top: 30%;
+   left: 5%;
+   background-size: contain;
+   font-size: larger;
+   padding: 10px;
+
+
+}
+
+.login {
+   color: azure;
+   position: absolute;
+   top: 63%;
+   left: 5%;
+   background-size: contain;
+   font-size: larger;
+   padding: 10px;
+}
+
+
+.nav-button {
+   padding: 10px 20px;
+   background-color: white;
+   color: black;
+   text-decoration: none;
+   border-radius: 5px;
+   font-size: 18px;
+   margin-right: 10px;
+   transition: background-color 0.2s ease-in-out;
+   float: left;
+}
+
+.nav-button:hover {
+   background-color: #2980b9;
+
+}
+
+.menu-icon {
+   color: white;
+   margin-right: 10px;
+   font-size: 30px;
+   cursor: pointer;
+   float: left;
+}
+
+.orderbut {
+   margin-left: 20px;
+   padding: 10px 10px;
+   border-radius: 30px;
+   width: fit-content;
+   font-size: large;
+   cursor: pointer;
+
+}
+
+.orderbut:hover {
+   background-color: #2980b9;
+}
+
+@keyframes moving {
+   from {
+      transform: translateX(0);
+   }
+
+   to {
+      transform: translateX(200px);
+   }
+}
+
+#moving-button {
+   animation: moving 2s linear infinite;
+   /* call the moving keyframes and make it infinite */
+}
+
+body img {
+   position: absolute;
+   top: 15%;
+
+}

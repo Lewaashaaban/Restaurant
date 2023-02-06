@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/70c682a6d6.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nosifer&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="order.css">
+    <script src="code.js"></script>
+
+
+</head>
+
+<body>
+    <img src="./images needed for the restaurant/logo_transparent4.png"
+        style="height: 200px;width: 400px;object-fit: cover;padding-left: 70px;top: 10%;">
+
+    <form>
+
+        <p>Tabouli : </p>
+        <div class="buyit">
+            <div class="flip">
+                <div class="flip-inner">
+                    <div class="flip-front">
+                        <img src="./images needed for the restaurant/tabouliplate.jpg">
+                    </div>
+                    <div class="flip-back">
+
+                        <p style="margin-bottom: 10px;">Ingredients:
+                        <ul>
+                            <li>Parsley</li>
+                            <li>Tomatoes</li>
+                            <li>Bulgur wheat</li>
+                            <li>Green Onions</li>
+                            <li>Olive Oil</li>
+                            <li>Lemon juice</li>
+                        </ul>
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+            <input type="text" style="width: 30px;padding: 5px;" placeholder="Qty" id="qty">
+            <label>&emsp;Size: &emsp;</label>
+            <Select id="size" style="padding: 5px;">
+                <option>Small $9.00</option>
+                <option>Medium $13.00</option>
+                <option>Large $15.00</option>
+            </Select>
+            <button onclick="calc(event)">Add to cart</button>
+            <p id="result"></p>
+        </div>
+        <hr>
+
+
+        <p>Kebbe : </p>
+        <div class="buyit">
+            <div class="flip">
+                <div class="flip-inner">
+                    <div class="flip-front">
+                        <img src="./images needed for the restaurant/kebbe.jpg ">
+                    </div>
+                    <div class="flip-back">
+
+                        <p>Ingredients:
+                        <ul>
+                            <li>Beaf</li>
+                            <li>Fine Bulgur wheat</li>
+                            <li>Pursed onions</li>
+                            <li>Middle Eastern spices</li>
+                            <li>Basil</li>
+                        </ul>
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+            <input type="text" style="width: 30px;padding: 5px;" placeholder="Qty">
+            <label>&emsp;Size: &emsp;</label>
+            <Select style="padding: 5px;">
+                <option value="">Small $12.00 </option>
+                <option value="">Medium $20.00 </option>
+                <option value="">Large $45.00 </option>
+            </Select>
+            <button onclick="calc(event)">Add to cart</button>
+            <p id="result"></p>
+        </div>
+        <hr>
+
+        <p>Warak Enab:</p>
+        <div class="buyit">
+            <div class="flip">
+                <div class="flip-inner">
+                    <div class="flip-front">
+                        <img src="./images needed for the restaurant/warakenab plate.webp ">
+                    </div>
+                    <div class="flip-back">
+                        <p>Ingredients:
+                        <uL>
+                            <li>Olive oil</li>
+                            <li>ground beaf</li>
+                            <li>Salt</li>
+                            <li>7 spices</li>
+                            <li>white rice</li>
+                            <li>cinnamon</li>
+                            <li>grape leaves</li>
+                            <li>Lemon juice</li>
+                        </uL>
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+            <input type="text" style="width: 30px;padding: 5px;" placeholder="Qty">
+            <label>&emsp;Size: &emsp;</label>
+            <Select style="padding: 5px;">
+                <option value="">Small $10.00 </option>
+                <option value="">Medium $15.00 </option>
+                <option value="">Large $25.00 </option>
+            </Select>
+            <button onclick="calc(event)">Add to cart</button>
+            <p id="result"></p>
+        </div>
+        <hr>
+
+
+
+        <p>Sheesh barak:</p>
+        <div class="buyit">
+            <div class="flip">
+                <div class="flip-inner">
+                    <div class="flip-front">
+                        <img src="./images needed for the restaurant/sheeshbarak.webp">
+                    </div>
+                    <div class="flip-back">
+                        <p>Ingredients:
+                        <ul>
+                            <li>garlic</li>
+                            <li>Onion</li>
+                            <li>salt</li>
+                            <li>spices</li>
+                            <li>Oil</li>
+                            <li>vegetebales</li>
+                            <li>yogurt/sumac</li>
+                            <li>beef</li>
+                            <li>butter </li>
+                        </ul>
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+            <input type="text" style="width: 30px;padding: 5px;" placeholder="Qty">
+            <label>&emsp;Size: &emsp;</label>
+            <Select style="padding: 5px;">
+                <option value="">10 pieces $12.00 </option>
+                <option value="">20 pieces $20.000 </option>
+                <option value="">30 pieces $28.00 </option>
+            </Select>
+            <button onclick="calc(event)">Add to cart</button>
+            <p id="result"></p>
+        </div>
+
+    </form>
+
+
+</body>
+
+</html>
