@@ -106,6 +106,10 @@ form button {
 
 }
 
+form button:hover {
+    cursor: pointer;
+}
+
 form input {
     margin-left: 150px;
 }
