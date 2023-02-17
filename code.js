@@ -1,4 +1,3 @@
-
 function newpage() {
 
   window.location = "menu.html";
