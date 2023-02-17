@@ -2,10 +2,13 @@ body {
    background: url("./falafelllllll.avif");
    background-size: cover;
    background-repeat: no-repeat;
+   overflow: hidden;
 
 }
 
 form {
+   display: flex;
+   flex-direction: column;
    color: azure;
    position: absolute;
    top: 30%;
@@ -13,7 +16,6 @@ form {
    background-size: contain;
    font-size: larger;
    padding: 10px;
-
 
 }
 
@@ -60,5 +62,6 @@ form {
 body img {
    position: absolute;
    top: 15%;
+   left: 1%;
 
 }
