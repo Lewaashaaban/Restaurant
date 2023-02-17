@@ -1,5 +1,6 @@
 
 function newpage() {
+
   window.location = "menu.html";
 }
 function home() {
@@ -15,7 +16,9 @@ function homepage() {
   window.location = "loginpage.html";
 }
 function orderonline() {
+
   window.location = "order.html";
+
 }
 
 
@@ -25,13 +28,15 @@ const submit = document.getElementById("submit");
 
 
 
-let result = 0;
+
 
 submit.addEventListener("click", function (event) {
   event.preventDefault();
   const selectedsize = selectedElement.value;
   const quantityvalue = selectedQuantity.value;
   const selectedNumber = parseInt(quantityvalue);
+
+  let result = 0;
 
   if (selectedsize === 'option1') {
     result = selectedNumber * 9;

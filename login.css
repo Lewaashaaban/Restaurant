@@ -17,16 +17,6 @@ form {
 
 }
 
-.login {
-   color: azure;
-   position: absolute;
-   top: 63%;
-   left: 5%;
-   background-size: contain;
-   font-size: larger;
-   padding: 10px;
-}
-
 
 .nav-button {
    padding: 10px 20px;
@@ -65,21 +55,6 @@ form {
 
 .orderbut:hover {
    background-color: #2980b9;
-}
-
-@keyframes moving {
-   from {
-      transform: translateX(0);
-   }
-
-   to {
-      transform: translateX(200px);
-   }
-}
-
-#moving-button {
-   animation: moving 2s linear infinite;
-   /* call the moving keyframes and make it infinite */
 }
 
 body img {
