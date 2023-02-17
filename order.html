@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <title>Document</title>
     <script src="https://kit.fontawesome.com/70c682a6d6.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
@@ -47,15 +46,18 @@
                 </div>
 
             </div>
-            <input type="text" style="width: 30px;padding: 5px;" placeholder="Qty" id="qty">
+            <input type="number" style="width: 40px;padding: 5px;" placeholder="Qty" id="qty">
+
             <label>&emsp;Size: &emsp;</label>
-            <Select id="size" style="padding: 5px;">
-                <option value="option1">Small $9.00</option>
-                <option value="option2">Medium $13.00</option>
-                <option value="option3">Large $15.00</option>
+
+            <Select id="select">
+                <option value="option1">Small</option>
+                <option value="option2">Medium</option>
+                <option value="option3">Large</option>
             </Select>
-            <button onclick="calc(event)">Add to cart</button><br>
-            <p id="result1"></p>
+
+            <button type="button" id="submit">Add to cart</button><br>
+            <div id="price"></div>
         </div>
         <hr>
 
@@ -169,12 +171,13 @@
             </Select>
             <button onclick="calc(event)">Add to cart</button>
             <p id="result"></p>
+
         </div>
         <hr>
         <button id="submit">Submit order</button>
     </form>
 
-
+    <script src="code.js"></script>
 </body>
 
 </html>

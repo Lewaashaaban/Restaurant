@@ -30,6 +30,10 @@ form img {
 
 
 }
+form #select{
+    padding: 5px;
+
+}
 
 form p {
     font-size: xx-large;
@@ -117,8 +121,4 @@ form input {
 form .buyit {
     display: flex;
     align-items: center;
-}
-
-form button:hover {
-    background-color: black;
 }

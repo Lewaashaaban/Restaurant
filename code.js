@@ -1,39 +1,48 @@
+
 function newpage() {
   window.location = "menu.html";
 }
 function home() {
-  alert("This is the home page ")
+  alert("This is the home page ");
 }
 function about() {
-  window.location = "about.html"
+  window.location = "about.html";
 }
 function contact() {
-  alert("Contect us : +961 03346678  call or message  ")
+  alert("Contect us : +961 03346678  call or message  ");
 }
 function homepage() {
-  window.location = "loginpage.html"
+  window.location = "loginpage.html";
 }
 function orderonline() {
-  window.location = "order.html"
+  window.location = "order.html";
 }
 
-function calc(event) {
+
+const selectedElement = document.querySelector("#select");
+const selectedQuantity = document.getElementById("qty");
+const submit = document.getElementById("submit");
+
+
+
+let result = 0;
+
+submit.addEventListener("click", function (event) {
   event.preventDefault();
-  let qty = document.getElementById("qty").value;
-  let select = document.getElementById("size");
-  var selectedOption = select.options[select.selectedindex];
-  var selectedtext = selectedOption.text;
-  let result = 0;
+  const selectedsize = selectedElement.value;
+  const quantityvalue = selectedQuantity.value;
+  const selectedNumber = parseInt(quantityvalue);
 
-  if (selectedtext === "Small $9.00") {
-    { result = qty * 9; }
+  if (selectedsize === 'option1') {
+    result = selectedNumber * 9;
   }
-  if (selectedOption === "option2") {
-    { result = qty * 13; }
+  else if (selectedsize === 'option2') {
+    result = selectedNumber * 13;
   }
-  if (selectedOption === "option3") {
-    { result = qty * 15; }
+  else if (selectedsize === 'option3') {
+    result = selectedNumber * 15;
   }
-  document.getElementById("result1").innerHTML = "payment is:" + result + "$$";
-}
+  document.getElementById("price").innerHTML = "result is " + result + "$";
+
+})
 
