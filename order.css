@@ -118,3 +118,7 @@ form .buyit {
     display: flex;
     align-items: center;
 }
+
+form button:hover {
+    background-color: black;
+}

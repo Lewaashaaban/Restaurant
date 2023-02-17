@@ -20,22 +20,20 @@ function orderonline() {
 function calc(event) {
   event.preventDefault();
   let qty = document.getElementById("qty").value;
-  var select = getElementById("size");
+  let select = document.getElementById("size");
   var selectedOption = select.options[select.selectedindex];
   var selectedtext = selectedOption.text;
   let result = 0;
-  if (qty >= 1 || qty <= 14) {
-    if (selectedtext === "Small $9.00") {
-      { result = qty * 9; }
-    }
-    if (selectedtext === "Medium $13.00") {
-      { result = qty * 13; }
-    }
-    if (selectedtext === "Large $15.00") {
-      { result = qty * 15; }
-    }
+
+  if (selectedtext === "Small $9.00") {
+    { result = qty * 9; }
   }
-  
-  document.getElementById("result").innerHTML = "payment is: $$";
+  if (selectedOption === "option2") {
+    { result = qty * 13; }
+  }
+  if (selectedOption === "option3") {
+    { result = qty * 15; }
+  }
+  document.getElementById("result1").innerHTML = "payment is:" + result + "$$";
 }
 

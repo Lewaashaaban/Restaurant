@@ -50,12 +50,12 @@
             <input type="text" style="width: 30px;padding: 5px;" placeholder="Qty" id="qty">
             <label>&emsp;Size: &emsp;</label>
             <Select id="size" style="padding: 5px;">
-                <option>Small $9.00</option>
-                <option>Medium $13.00</option>
-                <option>Large $15.00</option>
+                <option value="option1">Small $9.00</option>
+                <option value="option2">Medium $13.00</option>
+                <option value="option3">Large $15.00</option>
             </Select>
-            <button onclick="calc(event)">Add to cart</button>
-            <p id="result"></p>
+            <button onclick="calc(event)">Add to cart</button><br>
+            <p id="result1"></p>
         </div>
         <hr>
 
@@ -86,9 +86,9 @@
             <input type="text" style="width: 30px;padding: 5px;" placeholder="Qty">
             <label>&emsp;Size: &emsp;</label>
             <Select style="padding: 5px;">
-                <option value="">Small $12.00 </option>
-                <option value="">Medium $20.00 </option>
-                <option value="">Large $45.00 </option>
+                <option value="option1">Small $12.00 </option>
+                <option value="option2">Medium $20.00 </option>
+                <option value="option3">Large $45.00 </option>
             </Select>
             <button onclick="calc(event)">Add to cart</button>
             <p id="result"></p>
@@ -123,9 +123,9 @@
             <input type="text" style="width: 30px;padding: 5px;" placeholder="Qty">
             <label>&emsp;Size: &emsp;</label>
             <Select style="padding: 5px;">
-                <option value="">Small $10.00 </option>
-                <option value="">Medium $15.00 </option>
-                <option value="">Large $25.00 </option>
+                <option value="option1">Small $10.00 </option>
+                <option value="option2">Medium $15.00 </option>
+                <option value="option3">Large $25.00 </option>
             </Select>
             <button onclick="calc(event)">Add to cart</button>
             <p id="result"></p>
@@ -163,14 +163,15 @@
             <input type="text" style="width: 30px;padding: 5px;" placeholder="Qty">
             <label>&emsp;Size: &emsp;</label>
             <Select style="padding: 5px;">
-                <option value="">10 pieces $12.00 </option>
-                <option value="">20 pieces $20.000 </option>
-                <option value="">30 pieces $28.00 </option>
+                <option value="option1">10 pieces $12.00 </option>
+                <option value="option2">20 pieces $20.000 </option>
+                <option value="option3">30 pieces $28.00 </option>
             </Select>
             <button onclick="calc(event)">Add to cart</button>
             <p id="result"></p>
         </div>
-
+        <hr>
+        <button id="submit">Submit order</button>
     </form>
 
 
