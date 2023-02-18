@@ -17,14 +17,14 @@
 </head>
 
 <body>
-    <img src="./images needed for the restaurant/logo_transparent4.png"
-        style="height: 200px;width: 400px;object-fit: cover;padding-left: 70px;top: 10%;">
+
 
     <form>
 
         <p>Tabouli : </p>
         <div class="buyit">
             <div class="flip">
+
                 <div class="flip-inner">
                     <div class="flip-front">
                         <img src="./images needed for the restaurant/tabouliplate.jpg">
@@ -46,22 +46,22 @@
                 </div>
 
             </div>
-            <input type="number" style="width: 40px;padding: 5px;" placeholder="Qty" id="qty">
+            <input type="number" min="0" placeholder="Qty" id="qty">
 
             <label>&emsp;Size: &emsp;</label>
 
             <Select id="select">
-                <option value="option1">Small</option>
-                <option value="option2">Medium</option>
-                <option value="option3">Large</option>
+                <option value="option1">Small 9.00$</option>
+                <option value="option2">Medium 13.00$</option>
+                <option value="option3">Large 15.00$</option>
             </Select>
 
-            <button type="button" id="submit" onclick="salary()">Add to cart</button><br>
+            <button type="button" id="submit">Add to cart</button><br>
             <div id="price"></div>
         </div>
         <hr>
 
-
+        <!-- kebbe -->
         <p>Kebbe : </p>
         <div class="buyit">
             <div class="flip">
@@ -85,18 +85,21 @@
                 </div>
 
             </div>
-            <input type="text" style="width: 30px;padding: 5px;" placeholder="Qty">
+            <input type="number" min="0" placeholder="Qty" id="qty2">
+
             <label>&emsp;Size: &emsp;</label>
-            <Select style="padding: 5px;">
-                <option value="option1">Small $12.00 </option>
-                <option value="option2">Medium $20.00 </option>
-                <option value="option3">Large $45.00 </option>
+
+            <Select id="select2">
+                <option value="option1">Small 12.00$</option>
+                <option value="option2">Medium 20.00$</option>
+                <option value="option3">Large 45.00$</option>
             </Select>
-            <button onclick="calc(event)">Add to cart</button>
-            <p id="result"></p>
+
+            <button type="button" id="submit2" onclick="kebbe()">Add to cart</button><br>
+            <div id="price2"></div>
         </div>
         <hr>
-
+        <!-- warak enab -->
         <p>Warak Enab:</p>
         <div class="buyit">
             <div class="flip">
@@ -122,19 +125,22 @@
                 </div>
 
             </div>
-            <input type="text" style="width: 30px;padding: 5px;" placeholder="Qty">
+            <input type="number" min="0" placeholder="Qty" id="qty3">
+
             <label>&emsp;Size: &emsp;</label>
-            <Select style="padding: 5px;">
-                <option value="option1">Small $10.00 </option>
-                <option value="option2">Medium $15.00 </option>
-                <option value="option3">Large $25.00 </option>
+
+            <Select id="select3">
+                <option value="option1">Small 10.00$</option>
+                <option value="option2">Medium 20.00$</option>
+                <option value="option3">Large 45.00$</option>
             </Select>
-            <button onclick="calc(event)">Add to cart</button>
-            <p id="result"></p>
+
+            <button type="button" id="submit3">Add to cart</button><br>
+            <div id="price3"></div>
         </div>
         <hr>
 
-
+        <!-- sheesh barak -->
 
         <p>Sheesh barak:</p>
         <div class="buyit">
@@ -162,19 +168,25 @@
                 </div>
 
             </div>
-            <input type="text" style="width: 30px;padding: 5px;" placeholder="Qty">
-            <label>&emsp;Size: &emsp;</label>
-            <Select style="padding: 5px;">
-                <option value="option1">10 pieces $12.00 </option>
-                <option value="option2">20 pieces $20.000 </option>
-                <option value="option3">30 pieces $28.00 </option>
-            </Select>
-            <button onclick="calc(event)">Add to cart</button>
-            <p id="result"></p>
 
+            <input type="number" min="0" placeholder="Qty" id="qty4">
+
+            <label>&emsp;Size: &emsp;</label>
+
+            <Select id="select4">
+                <option value="option1">Small 12.00$</option>
+                <option value="option2">Medium 20.00$</option>
+                <option value="option3">Large 29.00$</option>
+            </Select>
+
+            <button type="button" id="submit4">Add to cart</button><br>
+            <div id="price4"></div>
         </div>
         <hr>
-        <button id="submit">Submit order</button>
+        <div style="display: flex;flex-direction: row;">
+            <button type="button" id="submitOrder">Submit order</button>
+            <div id="fatoora"></div>
+        </div>
     </form>
 
     <script src="order.js"></script>
