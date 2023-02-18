@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Online order</title>
     <script src="https://kit.fontawesome.com/70c682a6d6.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Nosifer&display=swap" rel="stylesheet">
@@ -54,6 +54,7 @@
                 <option value="option1">Small 9.00$</option>
                 <option value="option2">Medium 13.00$</option>
                 <option value="option3">Large 15.00$</option>
+                <option value="option4">None</option>
             </Select>
 
             <button type="button" id="submit">Add to cart</button><br>
@@ -93,9 +94,10 @@
                 <option value="option1">Small 12.00$</option>
                 <option value="option2">Medium 20.00$</option>
                 <option value="option3">Large 45.00$</option>
+                <option value="option4">None</option>
             </Select>
 
-            <button type="button" id="submit2" onclick="kebbe()">Add to cart</button><br>
+            <button type="button" id="submit2">Add to cart</button><br>
             <div id="price2"></div>
         </div>
         <hr>
@@ -133,6 +135,7 @@
                 <option value="option1">Small 10.00$</option>
                 <option value="option2">Medium 20.00$</option>
                 <option value="option3">Large 45.00$</option>
+                <option value="option4">None</option>
             </Select>
 
             <button type="button" id="submit3">Add to cart</button><br>
@@ -177,6 +180,7 @@
                 <option value="option1">Small 12.00$</option>
                 <option value="option2">Medium 20.00$</option>
                 <option value="option3">Large 29.00$</option>
+                <option value="option4">None</option>
             </Select>
 
             <button type="button" id="submit4">Add to cart</button><br>
@@ -185,10 +189,11 @@
         <hr>
         <div style="display: flex;flex-direction: row;">
             <button type="button" id="submitOrder">Submit order</button>
+            <button type="button" id="CancelOrder" onclick="homepage()">Cancel Submition</button>
             <div id="fatoora"></div>
         </div>
     </form>
-
+    <script src="./code.js"></script>
     <script src="order.js"></script>
 </body>
 
