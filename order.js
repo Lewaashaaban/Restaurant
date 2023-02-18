@@ -1,14 +1,6 @@
 const table2 = document.getElementById("table2");
 const fatoora = document.getElementById("fatoora");
 
-// function checkorder(a, b) {
-//     if (a != 0) {
-//         table2.innerHTML = b;
-//     } else {
-//         table2.innerHTML = "";
-//     }
-// }
-
 
 
 let count = 0;
@@ -42,14 +34,14 @@ function checkorder(a, b, small, medium, large) {
 const selectedElement = document.querySelector("#select");
 const selectedQuantity = document.getElementById("qty");
 const submit = document.getElementById("submit");
+let clickme = 0
 
 submit.addEventListener("click", function () {
 
     const selectedsize = selectedElement.value;
     const quantityvalue = selectedQuantity.value;
     const selectedNumber = parseInt(quantityvalue);
-
-
+    clickme++;
     count += checkorder(selectedsize, selectedNumber, 9, 13, 15);
 
     document.getElementById("price").innerHTML = "Cost: " + checkorder(selectedsize, selectedNumber, 9, 13, 15) + "$";
@@ -58,6 +50,12 @@ submit.addEventListener("click", function () {
 
 
 });
+if (clickme != 0) {
+    localStorage.setItem('selectedsize', checkorder(selectedsize, selectedNumber, 9, 13, 15).toString());
+
+    localStorage.setItem('Rqty', selectedNumber.toString());
+    localStorage.setItem('Foodname', "tabouli");
+}
 
 //button for kebbe
 
@@ -78,6 +76,13 @@ submit2.addEventListener("click", function () {
 
     fatoora.innerHTML = count + ".00$";
 
+    if (checkorder(selectedsize2, selectedNumber2, 9, 13, 15)) {
+
+        localStorage.setItem('selectedsize2', checkorder(selectedsize2, selectedNumber2, 12, 20, 45).toString());
+        localStorage.setItem('Rqty2', selectedNumber2.toString());
+
+    }
+
 });
 
 //button for warak enab 
@@ -97,6 +102,13 @@ submit3.addEventListener("click", function () {
     document.getElementById("price3").innerHTML = "Cost: " + checkorder(selectedsize3, selectedNumber3, 10, 20, 45) + "$";
     fatoora.innerHTML = count + ".00$";
 
+    if (checkorder(selectedsize3, selectedNumber3, 10, 20, 45)) {
+
+        localStorage.setItem('selectedsize3', checkorder(selectedsize3, selectedNumber3, 12, 20, 45).toString());
+        localStorage.setItem('Rqty3', selectedNumber3.toString());
+
+
+    }
 });
 
 //button for sheesh barak
@@ -117,7 +129,18 @@ submit4.addEventListener("click", function () {
     document.getElementById("price4").innerHTML = "Cost: " + checkorder(selectedsize4, selectedNumber4, 12, 20, 29) + "$";
     fatoora.innerHTML = count + ".00$";
 
+    if (checkorder(selectedsize4, selectedNumber4, 12, 20, 45)) {
+
+        localStorage.setItem('selectedsize4', checkorder(selectedsize4, selectedNumber4, 12, 20, 45).toString());
+        localStorage.setItem('Rqty4', selectedNumber4.toString());
+    }
+
 });
+
+//btn submit order
+function submitt() {
+    window.location = "receipt.html"
+}
 
 
 

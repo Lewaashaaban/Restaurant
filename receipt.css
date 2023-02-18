@@ -7,7 +7,8 @@ body {
 }
 
 #form {
-
+    border: 1px solid grey;
+    padding: 40px;
     font-size: x-large;
     width: 500px;
 
@@ -24,4 +25,18 @@ h1 {
 
 hr {
     border-style: dashed;
+}
+
+.lastcolumn {
+    float: right;
+}
+
+.locate {
+    display: none;
+}
+
+button {
+    border-radius: 10%;
+    padding: 5px;
+    border-color: grey;
 }

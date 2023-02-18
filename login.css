@@ -3,6 +3,7 @@ body {
    background-size: cover;
    background-repeat: no-repeat;
    overflow: hidden;
+   display: flex;
 
 }
 
@@ -65,4 +66,3 @@ body img {
    left: 1%;
 
 }
-

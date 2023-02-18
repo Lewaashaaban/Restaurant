@@ -29,18 +29,82 @@
         </div>
         <hr>
         <div id="table">
-            <table>
+            <table style="width:500px;text-align: center;">
+                <tr>
+                    <th>Qty</th>
+                    <th>Food Name</th>
+                    <th class=" lastcolumn">Price</th>
+                </tr>
                 <tr>
                     <td id="Rqty"></td>
-                    <td id="R"></td>
-                    <td id="Rprice"></td>
+                    <td id="Rfoodname"></td>
+                    <td id="Rprice" class="lastcolumn"></td>
+                </tr>
+                <tr>
+                    <td id="Rqty2"></td>
+                    <td id="Rfoodname2"></td>
+                    <td id="Rprice2" class="lastcolumn"></td>
+                </tr>
+                <tr>
+                    <td id="Rqty3"></td>
+                    <td id="Rfoodname3"></td>
+                    <td id="Rprice3" class="lastcolumn"></td>
+                </tr>
+                <tr>
+                    <td id="Rqty4"></td>
+                    <td id="Rfoodname4"></td>
+                    <td id="Rprice4" class="lastcolumn"></td>
+                </tr>
+            </table>
+            <hr>
+            <table style="width:500px;text-align: center;">
+                <tr>
+                    <th style="float: left;">SubTotal</th>
+                    <th>
+                        <div id="subtotal"></div>
+                    </th>
                 </tr>
             </table>
 
         </div>
+        <hr>
+
+        <table id="lasttable">
+
+            <tr>
+                <td><label>Please type your name</label></td>
+                <td><input type="text" name="" id=""><br></td>
+            </tr>
+            <tr>
+                <td><label>Enter your phone number</label></td>
+                <td> <input type="tel"><br></td>
+            </tr>
+
+            <tr>
+                <td><label>Take away or Delivery?</label></td>
+                <td> <button type="button" id="takeaway">takeaway</button>
+                    <button type="button" id="deliver">Delivery</button>
+                </td>
+            </tr>
+
+            <tr>
+
+                <td>
+                    <div id="locate"><label>Send your location to deliver</label></div>
+                </td>
+                <td>
+                    <div id="locate"> <input type="location" name=""></div>
+                </td>
+
+    </div>
+    </tr>
+
+    </table>
+
     </div>
     <script src="receipt.js"></script>
     <script src="./order.js"></script>
+
 </body>
 
 </html>
