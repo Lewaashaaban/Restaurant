@@ -6,6 +6,7 @@ const fatoora = document.getElementById("fatoora");
 let count = 0;
 let result = 0;
 
+// function to check what size of food did the customer selected
 function checkorder(a, b, small, medium, large) {
     let result = 0;
     if (a === 'option1') {
@@ -37,25 +38,26 @@ const submit = document.getElementById("submit");
 let clickme = 0
 
 submit.addEventListener("click", function () {
-
+    clickme++;
     const selectedsize = selectedElement.value;
     const quantityvalue = selectedQuantity.value;
     const selectedNumber = parseInt(quantityvalue);
-    clickme++;
+
     count += checkorder(selectedsize, selectedNumber, 9, 13, 15);
 
     document.getElementById("price").innerHTML = "Cost: " + checkorder(selectedsize, selectedNumber, 9, 13, 15) + "$";
+
+    const checker = document.getElementById("price").value
     fatoora.innerHTML = count + ".00$";
 
 
-
-});
-if (clickme != 0) {
+    // items stored to use in the receipt file
     localStorage.setItem('selectedsize', checkorder(selectedsize, selectedNumber, 9, 13, 15).toString());
 
     localStorage.setItem('Rqty', selectedNumber.toString());
     localStorage.setItem('Foodname', "tabouli");
-}
+
+});
 
 //button for kebbe
 
@@ -76,12 +78,12 @@ submit2.addEventListener("click", function () {
 
     fatoora.innerHTML = count + ".00$";
 
-    if (checkorder(selectedsize2, selectedNumber2, 9, 13, 15)) {
 
-        localStorage.setItem('selectedsize2', checkorder(selectedsize2, selectedNumber2, 12, 20, 45).toString());
-        localStorage.setItem('Rqty2', selectedNumber2.toString());
+    //To store in the receipt part
+    localStorage.setItem('selectedsize2', checkorder(selectedsize2, selectedNumber2, 12, 20, 45).toString());
+    localStorage.setItem('Rqty2', selectedNumber2.toString());
 
-    }
+
 
 });
 
@@ -97,18 +99,18 @@ submit3.addEventListener("click", function () {
     const selectedNumber3 = parseInt(quantityvalue3);
 
 
-    count += count += checkorder(selectedsize3, selectedNumber3, 10, 20, 45);;
+    count += checkorder(selectedsize3, selectedNumber3, 10, 20, 45);;
 
     document.getElementById("price3").innerHTML = "Cost: " + checkorder(selectedsize3, selectedNumber3, 10, 20, 45) + "$";
     fatoora.innerHTML = count + ".00$";
 
-    if (checkorder(selectedsize3, selectedNumber3, 10, 20, 45)) {
 
-        localStorage.setItem('selectedsize3', checkorder(selectedsize3, selectedNumber3, 12, 20, 45).toString());
-        localStorage.setItem('Rqty3', selectedNumber3.toString());
+    // items to store in the receipt part
+    localStorage.setItem('selectedsize3', checkorder(selectedsize3, selectedNumber3, 10, 20, 45).toString());
+    localStorage.setItem('Rqty3', selectedNumber3.toString());
 
 
-    }
+
 });
 
 //button for sheesh barak
@@ -129,11 +131,11 @@ submit4.addEventListener("click", function () {
     document.getElementById("price4").innerHTML = "Cost: " + checkorder(selectedsize4, selectedNumber4, 12, 20, 29) + "$";
     fatoora.innerHTML = count + ".00$";
 
-    if (checkorder(selectedsize4, selectedNumber4, 12, 20, 45)) {
 
-        localStorage.setItem('selectedsize4', checkorder(selectedsize4, selectedNumber4, 12, 20, 45).toString());
-        localStorage.setItem('Rqty4', selectedNumber4.toString());
-    }
+    //items stored to be used in the receipt part
+    localStorage.setItem('selectedsize4', checkorder(selectedsize4, selectedNumber4, 12, 20, 29).toString());
+    localStorage.setItem('Rqty4', selectedNumber4.toString());
+
 
 });
 

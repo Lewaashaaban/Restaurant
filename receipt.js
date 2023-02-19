@@ -4,9 +4,12 @@ let today = new Date();
 
 date.innerHTML = today.getDate() + "/" + today.getMonth() + "/" + today.getFullYear();
 
+
+
 //fill first row
 const selectedsizestr = localStorage.getItem('selectedsize');
 const selectedsize = parseInt(selectedsizestr);
+
 
 const selectedquantitystr = localStorage.getItem('Rqty');
 const selectedquantity = parseInt(selectedquantitystr);
@@ -20,6 +23,7 @@ const Rprice = document.getElementById("Rprice");
 
 Rprice.innerHTML = selectedsizestr + ".00$";
 Rqty.innerHTML = selectedquantity;
+
 
 if (Rprice != 0)
     Rfoodname.innerHTML = "Tabouli";
@@ -79,12 +83,17 @@ const Foodname4 = localStorage.getItem('Foodname4');
 const Rqty4 = document.getElementById("Rqty4");
 const Rfoodname4 = document.getElementById("Rfoodname4");
 const Rprice4 = document.getElementById("Rprice4");
-
+inner = Rprice4.innerHTML;
 Rprice4.innerHTML = selectedsizestr4 + ".00$";
 Rqty4.innerHTML = selectedquantity4;
 
 if (Rprice4 != 0)
     Rfoodname4.innerHTML = "Sheesh Barak";
+else
+    Rfoodname4.innerHTML = "";
+
+
+document.getElementById("subtotal").innerHTML = parseInt(selectedsize4 + selectedsize3 + selectedsize2 + selectedsize) + ".00$";
 
 //costumer info
 const location12 = document.getElementById("locate");
