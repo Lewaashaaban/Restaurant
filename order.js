@@ -141,7 +141,23 @@ submit4.addEventListener("click", function () {
 
 //btn submit order
 function submitt() {
-    window.location = "receipt.html"
+    let name = "";
+    let phonenumber = "";
+    let googlemaps = "";
+    while (name == "")
+        name = prompt("Please enter your full name");
+
+    while (phonenumber == "")
+        phonenumber = prompt("Please enter your phone number");
+
+    while (googlemaps == "")
+        googlemaps = prompt("please enter your location to deliver");
+
+    window.location = "receipt.html";
+
+    localStorage.setItem('name', name);
+
+    localStorage.setItem('googlemaps', googlemaps);
 }
 
 

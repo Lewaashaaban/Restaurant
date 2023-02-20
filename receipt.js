@@ -96,19 +96,12 @@ else
 document.getElementById("subtotal").innerHTML = parseInt(selectedsize4 + selectedsize3 + selectedsize2 + selectedsize) + ".00$";
 
 //costumer info
-const location12 = document.getElementById("locate");
+const customername = localStorage.getItem('name');
+const googlemaps = localStorage.getItem('googlemaps');
 
-const deliver = document.getElementById("deliver");
-const takeaway = document.getElementById("takeaway");
+document.getElementById("customername").innerHTML = customername;
 
-function deliverclicked() {
-    location12.style.display = "inline-block";
-}
+document.getElementById("googlemaps").innerHTML = googlemaps;
 
-function takeawayclicked() {
-    location12.style.display = "none";
-}
 
-deliver.addEventListener("click", deliverclicked);
-takeaway.addEventListener("click", takeawayclicked);
 

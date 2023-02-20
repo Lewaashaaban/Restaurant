@@ -44,3 +44,14 @@ button {
 input {
     padding: 3px;
 }
+
+#googlemaps,
+#customername {
+    color: brown;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#endingP {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
